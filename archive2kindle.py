@@ -19,7 +19,7 @@ COMMASPACE = ', '
 
 
 def send_file(path):
-    with open('~/.archive2kindle/secrets.yml', 'r') as file: 
+    with open('/Users/jstokes/.archive2kindle/secrets.yml', 'r') as file: 
         secrets = yaml.load(file, Loader=yaml.FullLoader)
 
     sender = secrets['sender']
